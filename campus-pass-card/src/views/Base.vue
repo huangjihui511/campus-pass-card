@@ -34,7 +34,7 @@
                     <HR color="lightgray" size="1px"></HR>
                     <Points>
                     </Points>
-                    <div style="width: 40%;margin: 0 auto;font-size: 1px;text-align: left;padding-bottom: 30px">
+                    <div style="width: 40%;margin: 0 auto;text-align: left;padding-bottom: 30px">
                         <el-row>
                             <el-col span="8">姓名</el-col>
                             <el-col span="16">： 黄继辉</el-col>
