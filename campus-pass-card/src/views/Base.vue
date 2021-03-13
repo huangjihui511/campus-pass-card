@@ -102,10 +102,11 @@
 
 <style scoped>
     #bg {
-        background-color: #45ff42;
+        /*background-color: #45ff42;*/
+        background-image: url("../assets/bgc.png");
         width: 100%;
         height: 1000px;
-        margin: 0 auto;
+        /*margin: 0 auto;*/
         padding: 8px;
         padding-bottom: 100px;
     }
@@ -132,7 +133,7 @@
         left: 18%
     }
     #q1 {
-        background-color: #45ff42;
+        background-image: url("../assets/bgc.png");
         width: 20px;
         height: 20px;
         border-radius:50%;
@@ -141,7 +142,7 @@
         bottom: 13%;
     }
     #q2 {
-        background-color: #45ff42;
+        background-image: url("../assets/bgc.png");
         width: 20px;
         height: 20px;
         border-radius:50%;
