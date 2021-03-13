@@ -1,18 +1,14 @@
 <template>
     <div>
-        <div v-if="!pass">
-            <h1>Password</h1>
-            <input type="text" v-model="password">
-            <button @click="submit">Submit</button>
-        </div>
+
         <div v-if="pass">
-            <el-row style="padding: 2px">
+            <el-row style="height: 40px;border-bottom: gray 1px solid">
                 <el-col :span="2">
-                    <i class="el-icon-arrow-left"></i>
+                    <i class="el-icon-arrow-left" style="margin: 12px"></i>
                 </el-col>
-                <el-col :span="16" style="text-align: right;font-size: medium;font-weight: bold">网上办事大厅-校园通行卡</el-col>
+                <el-col :span="16" style="line-height:40px;text-align: right;font-size: medium;font-weight: bold;margin: auto">网上办事大厅-校园通行卡</el-col>
                 <el-col :span="6" style="padding: 2px">
-                    <el-button size="mini" round>
+                    <el-button size="mini" round style="margin: 4px">
                         <i class="el-icon-more" style="padding-right: 6px"></i>
                         |
                         <i class="el-icon-switch-button" style="padding-left: 6px"></i>
@@ -34,7 +30,7 @@
                     <HR color="lightgray" size="1px"></HR>
                     <Points>
                     </Points>
-                    <div style="width: 40%;margin: 0 auto;text-align: left;padding-bottom: 30px">
+                    <div style="width: 40%;margin: 0 auto;text-align: left;font-size: smaller;padding-bottom: 30px">
                         <el-row>
                             <el-col span="8">姓名</el-col>
                             <el-col span="16">： 黄继辉</el-col>
@@ -66,6 +62,11 @@
 <!--            <img id="profile" src="../assets/profile.png" width="30%">-->
 <!--            <Points id="points"></Points>-->
 <!--            <TimeLabel id="timeLabel"></TimeLabel>-->
+        </div>
+        <div v-if="!pass">
+            <h1>Password</h1>
+            <input type="text" v-model="password">
+            <button @click="submit">Submit</button>
         </div>
     </div>
 
@@ -101,7 +102,7 @@
 
 <style scoped>
     #bg {
-        background-color: #49ff87;
+        background-color: #6dff00;
         width: 100%;
         height: 100%;
         margin: 0 auto;
@@ -131,7 +132,7 @@
         left: 18%
     }
     #q1 {
-        background-color: #49ff87;
+        background-color: #6dff00;
         width: 20px;
         height: 20px;
         border-radius:50%;
@@ -140,7 +141,7 @@
         bottom: 13%;
     }
     #q2 {
-        background-color: #49ff87;
+        background-color: #6dff00;
         width: 20px;
         height: 20px;
         border-radius:50%;
