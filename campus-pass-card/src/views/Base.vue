@@ -5,7 +5,7 @@
             <input type="text" v-model="password">
             <button @click="submit">Submit</button>
         </div>
-        <div v-if="pass" @touchmove.prevent>
+        <div v-if="pass">
             <img id="base" src="../assets/base.png" width="100%">
             <div id="mask"></div>
             <img id="profile" src="../assets/profile.png" width="30%">
