@@ -19,14 +19,18 @@
                     </el-button>
                 </el-col>
             </el-row>
-            <el-row id="bg">
-                <div style="padding: 20px;margin: 20px;background-color: white;border-radius: 30px;">
-                    <el-row style="font-weight: bold;font-size: small;margin-bottom: 10px">
-                        校园通行卡
-                    </el-row>
-                    <el-row>
-                        <TimeLabel></TimeLabel>
-                    </el-row>
+            <el-row id="bg" >
+                <div style="padding: 20px;margin: 20px auto;background-color: white;border-radius: 30px;position: relative">
+                    <div style="position: relative">
+                        <el-row style="font-weight: bold;font-size: small;margin-bottom: 10px">
+                            校园通行卡
+                        </el-row>
+                        <el-row>
+                            <TimeLabel></TimeLabel>
+                        </el-row>
+                        <div style="position: absolute; top: -10px;font-size: 65px;color: lightgray;font-family:'Kaiti SC'">航</div>
+                    </div>
+
                     <HR color="lightgray" size="1px"></HR>
                     <Points>
                     </Points>
@@ -49,9 +53,13 @@
                         </el-row>
                     </div>
                     <HR color="lightgray" size="1px"></HR>
-                    <div style="padding-top: 5px;padding-bottom:20px; color: green">允许通行</div>
-                </div>
+                    <div style="padding-top: 5px;padding-bottom:20px; color: green;font-weight: bold">允许通行</div>
+                    <div id="sh1" style=""></div>
+                    <div id="sh2" style=""></div>
+                    <div id="q1"></div>
+                    <div id="q2"></div>
 
+                </div>
             </el-row>
 <!--            <img id="base" src="../assets/base.png" width="100%">-->
 <!--            <div id="mask"></div>-->
@@ -76,7 +84,7 @@
         // components: {Points, TimeLabel},
         data() {
             return {
-                pass: true,
+                pass: false,
                 password: "",
                 realPassword: "yes"
             }
@@ -98,38 +106,46 @@
         height: 100%;
         margin: 0 auto;
         padding: 8px;
+        padding-bottom: 100px;
     }
-    #points {
-        z-index: 100;
+    #sh1 {
+        border-radius: 20px;
+        padding: 20px;
         background-color: white;
-        width: 80%;
-        height: 30%;
-        position: fixed;
-        top: 20%;
-        right: 10%;
+        width: 70%;
+        margin: 0 auto;
+        opacity: 0.5;
+        position: absolute;
+        bottom: -15px;
+        left: 9%
     }
-    #mask {
-        z-index: 50;
+    #sh2 {
+        border-radius: 20px;
+        padding: 20px;
         background-color: white;
-        width: 80%;
-        height: 25%;
-        position: fixed;
-        top: 20%;
-        right: 10%;
+        width: 50%;
+        margin: 0 auto;
+        opacity: 0.5;
+        position: absolute;
+        bottom: -30px;
+        left: 18%
     }
-    #profile {
-        z-index: 200;
-        position: fixed;
-        top: 22%;
-        right: 35%;
+    #q1 {
+        background-color: #49ff87;
+        width: 20px;
+        height: 20px;
+        border-radius:50%;
+        position: absolute;
+        left: -10px;
+        bottom: 13%;
     }
-    #base {
-        z-index: 0;
-    }
-    #timeLabel {
-        position: fixed;
-        top: 14.2%;
-        z-index: 200;
-        left: 30%;
+    #q2 {
+        background-color: #49ff87;
+        width: 20px;
+        height: 20px;
+        border-radius:50%;
+        position: absolute;
+        right: -10px;
+        bottom: 13%;
     }
 </style>
