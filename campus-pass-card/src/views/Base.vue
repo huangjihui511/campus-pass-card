@@ -1,11 +1,19 @@
 <template>
     <div>
-        <img id="base" src="../assets/base.png" width="100%">
-        <div id="mask"></div>
-        <img id="profile" src="../assets/profile.png" width="30%">
-        <Points id="points"></Points>
-        <TimeLabel id="timeLabel"></TimeLabel>
+        <div v-if="!pass">
+            <h1>Password</h1>
+            <input type="text" v-model="password">
+            <button @click="submit">Submit</button>
+        </div>
+        <div v-if="pass" @touchmove.prevent>
+            <img id="base" src="../assets/base.png" width="100%">
+            <div id="mask"></div>
+            <img id="profile" src="../assets/profile.png" width="30%">
+            <Points id="points"></Points>
+            <TimeLabel id="timeLabel"></TimeLabel>
+        </div>
     </div>
+
 
 </template>
 
@@ -15,7 +23,21 @@
     import Points from "../components/Points";
     export default {
         name: "Base",
-        components: {Points, TimeLabel}
+        components: {Points, TimeLabel},
+        data() {
+            return {
+                pass: false,
+                password: "",
+                realPassword: "yes"
+            }
+        },
+        methods: {
+            submit() {
+                if (this.password === this.realPassword) {
+                    this.pass = true
+                }
+            }
+        }
     }
 </script>
 
@@ -63,7 +85,7 @@
         z-index: 50;
         background-color: white;
         width: 80%;
-        height: 30%;
+        height: 25%;
         position: fixed;
         top: 20%;
         right: 10%;
@@ -81,6 +103,6 @@
         position: fixed;
         top: 14.2%;
         z-index: 200;
-        left: 29%;
+        left: 30%;
     }
 </style>

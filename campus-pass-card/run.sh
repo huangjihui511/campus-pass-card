@@ -1,1 +1,1 @@
-npm run serve
+source .venv/bin/activate
