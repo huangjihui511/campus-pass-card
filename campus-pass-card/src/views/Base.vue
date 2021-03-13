@@ -104,7 +104,7 @@
     #bg {
         background-color: #45ff42;
         width: 100%;
-        height: 100%;
+        height: 1000px;
         margin: 0 auto;
         padding: 8px;
         padding-bottom: 100px;
