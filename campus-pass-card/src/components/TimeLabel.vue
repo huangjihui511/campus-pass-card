@@ -38,5 +38,6 @@
     background-image: url("../assets/OpacityBG.png");
     margin: 0px auto;
     padding: 5px;
+    border-radius: 10px;
 }
 </style>

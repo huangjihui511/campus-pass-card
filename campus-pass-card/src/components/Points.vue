@@ -1,8 +1,9 @@
 <template>
     <div>
-        <div>
+        <div style="position:relative;">
             <img  v-if="index===0" src="../assets/points.png" width="50%">
             <img  v-if="index===1" src="../assets/pointsR.png" width="50%">
+            <img src="../assets/profile.png" width="39%" style="position: absolute;top: 7%;left: 30%">
         </div>
 
     </div>
