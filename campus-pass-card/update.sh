@@ -1,0 +1,1 @@
+git clone git@github.com:huangjihui511/campus-pass-card.git
