@@ -2,13 +2,13 @@
     <div>
 
         <div v-if="pass">
-            <el-row style="height: 40px;border-bottom: gray 1px solid">
+            <el-row style="height: 60px;border-bottom: gray 1px solid">
                 <el-col :span="2">
-                    <i class="el-icon-arrow-left" style="margin: 12px"></i>
+                    <i class="el-icon-arrow-left" style="margin: 22px;" ></i>
                 </el-col>
-                <el-col :span="16" style="line-height:40px;text-align: right;font-size: medium;font-weight: bold;margin: auto">网上办事大厅-校园通行卡</el-col>
+                <el-col :span="16" style="line-height:60px;text-align: right;font-size: medium;font-weight: bold;margin: auto">网上办事大厅-校园通行卡</el-col>
                 <el-col :span="6" style="padding: 2px">
-                    <el-button size="mini" round style="margin: 4px">
+                    <el-button size="mini" round style="margin: 14px">
                         <i class="el-icon-more" style="padding-right: 6px"></i>
                         |
                         <i class="el-icon-switch-button" style="padding-left: 6px"></i>
@@ -16,7 +16,7 @@
                 </el-col>
             </el-row>
             <el-row id="bg" >
-                <div style="padding: 20px;margin: 20px auto;background-color: white;border-radius: 30px;position: relative">
+                <div style="padding: 20px;margin: 20px 15px;background-color: white;border-radius: 30px;position: relative">
                     <div style="position: relative">
                         <el-row style="font-weight: bold;font-size: small;margin-bottom: 10px">
                             校园通行卡
@@ -102,7 +102,7 @@
 
 <style scoped>
     #bg {
-        background-color: #6dff00;
+        background-color: #45ff42;
         width: 100%;
         height: 100%;
         margin: 0 auto;
@@ -132,7 +132,7 @@
         left: 18%
     }
     #q1 {
-        background-color: #6dff00;
+        background-color: #45ff42;
         width: 20px;
         height: 20px;
         border-radius:50%;
@@ -141,7 +141,7 @@
         bottom: 13%;
     }
     #q2 {
-        background-color: #6dff00;
+        background-color: #45ff42;
         width: 20px;
         height: 20px;
         border-radius:50%;
