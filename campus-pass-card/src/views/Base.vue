@@ -2,19 +2,20 @@
     <div>
 
         <div v-if="pass">
-            <el-row style="height: 60px;border-bottom: gray 1px solid">
-                <el-col :span="2">
-                    <i class="el-icon-arrow-left" style="margin: 22px;" ></i>
-                </el-col>
-                <el-col :span="16" style="line-height:60px;text-align: right;font-size: medium;font-weight: bold;margin: auto">网上办事大厅-校园通行卡</el-col>
-                <el-col :span="6" style="padding: 2px">
-                    <el-button size="mini" round style="margin: 14px">
-                        <i class="el-icon-more" style="padding-right: 6px"></i>
-                        |
-                        <i class="el-icon-switch-button" style="padding-left: 6px"></i>
-                    </el-button>
-                </el-col>
-            </el-row>
+<!--            <el-row style="height: 60px;border-bottom: gray 1px solid">-->
+<!--                <el-col :span="2">-->
+<!--                    <i class="el-icon-arrow-left" style="margin: 22px;" ></i>-->
+<!--                </el-col>-->
+<!--                <el-col :span="16" style="line-height:60px;text-align: right;font-size: medium;font-weight: bold;margin: auto">网上办事大厅-校园通行卡</el-col>-->
+<!--                <el-col :span="6" style="padding: 2px">-->
+<!--                    <el-button size="mini" round style="margin: 14px">-->
+<!--                        <i class="el-icon-more" style="padding-right: 6px"></i>-->
+<!--                        |-->
+<!--                        <i class="el-icon-switch-button" style="padding-left: 6px"></i>-->
+<!--                    </el-button>-->
+<!--                </el-col>-->
+<!--            </el-row>-->
+            <img src="../assets/navi.png" width="100%">
             <el-row id="bg" >
                 <div style="padding: 20px;margin: 20px 15px;background-color: white;border-radius: 30px;position: relative">
                     <div style="position: relative">
@@ -114,22 +115,22 @@
         border-radius: 20px;
         padding: 20px;
         background-color: white;
-        width: 70%;
+        width: 78%;
         margin: 0 auto;
         opacity: 0.5;
         position: absolute;
-        bottom: -15px;
-        left: 9%
+        bottom: -8px;
+        left: 6%
     }
     #sh2 {
         border-radius: 20px;
         padding: 20px;
         background-color: white;
-        width: 50%;
+        width: 55%;
         margin: 0 auto;
         opacity: 0.5;
         position: absolute;
-        bottom: -30px;
+        bottom: -16px;
         left: 18%
     }
     #q1 {
