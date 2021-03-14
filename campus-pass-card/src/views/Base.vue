@@ -15,7 +15,7 @@
 <!--                    </el-button>-->
 <!--                </el-col>-->
 <!--            </el-row>-->
-            <img src="../assets/navi.png" width="100%">
+            <img src="../assets/navi.png" width="100%" style="margin-top: 15px">
             <el-row id="bg" >
                 <div style="padding: 20px;margin: 20px 15px 1000px;background-color: white;border-radius: 30px;position: relative">
                     <div style="position: relative">
@@ -25,28 +25,28 @@
                         <el-row style="z-index: 100">
                             <TimeLabel ></TimeLabel>
                         </el-row>
-                        <img style="position: absolute; bottom: -7px;left: 0px;z-index: 50" src="../assets/hang.png" width="20%">
+                        <img style="position: absolute; bottom: -7px;left: -4px;z-index: 50" src="../assets/hang.png" width="28%">
                     </div>
 
                     <HR color="lightgray" size="1px"></HR>
                     <Points>
                     </Points>
-                    <div style="width: 40%;margin: 0 auto;text-align: left;font-size: x-small;padding-bottom: 30px">
-                        <el-row>
-                            <el-col span="8">姓名</el-col>
-                            <el-col span="16">： 黄继辉</el-col>
+                    <div style="width: 50%;margin: 10px auto;text-align: left;font-size: x-small;padding-bottom: 30px">
+                        <el-row class="info">
+                            <el-col span="10">姓名</el-col>
+                            <el-col span="14">： 黄继辉</el-col>
                         </el-row>
-                        <el-row>
-                            <el-col span="8">性别</el-col>
-                            <el-col span="16">： 男</el-col>
+                        <el-row class="info">
+                            <el-col span="10">性别</el-col>
+                            <el-col span="14">： 男</el-col>
                         </el-row>
-                        <el-row>
-                            <el-col span="8">学工号</el-col>
-                            <el-col span="16">： 17373407</el-col>
+                        <el-row class="info">
+                            <el-col span="10">学工号</el-col>
+                            <el-col span="14">： 17373407</el-col>
                         </el-row>
-                        <el-row>
-                            <el-col span="8">学院</el-col>
-                            <el-col span="16">： 计算机学院</el-col>
+                        <el-row class="info">
+                            <el-col span="10">学院</el-col>
+                            <el-col span="14">： 计算机学院</el-col>
                         </el-row>
                     </div>
                     <HR color="lightgray" size="1px"></HR>
@@ -103,6 +103,9 @@
 </script>
 
 <style scoped>
+    .info {
+        margin: 5px auto;
+    }
     #bg {
         /*background-color: #45ff42;*/
         background-image: url("../assets/bgc.png");
@@ -122,19 +125,19 @@
         margin: 0 auto;
         opacity: 0.5;
         position: absolute;
-        bottom: -8px;
+        bottom: -6px;
         left: 6%
     }
     #sh2 {
         border-radius: 20px;
         padding: 20px;
         background-color: white;
-        width: 55%;
+        width: 65%;
         margin: 0 auto;
         opacity: 0.5;
         position: absolute;
-        bottom: -16px;
-        left: 18%
+        bottom: -13px;
+        left: 12%
     }
     #q1 {
         background-image: url("../assets/bgc.png");
