@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <div id="time">{{this.time}}</div>
+    <div id="timebox">
+        <div id="time" >{{this.time}}</div>
 
     </div>
 </template>
@@ -32,12 +32,17 @@
 </script>
 
 <style scoped>
-#time {
-    color: green;
-    font-size: small;
-    background-image: url("../assets/OpacityBG.png");
-    margin: 0px auto;
-    padding: 5px;
-    border-radius: 10px;
-}
+    #timebox {
+        font-size: small;
+        /*font-weight: bold;*/
+        color: green;
+        /*background-image: url("../assets/OpacityBG.png");*/
+        /*opacity: 0.2;*/
+        /*background-color: ;*/
+        background-color: rgba(50, 205, 50, 0.1);
+        margin: 0px auto;
+        padding: 5px;
+        border-radius: 10px;
+
+    }
 </style>

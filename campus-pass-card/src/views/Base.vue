@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div @touchmove.prevent>
 
         <div v-if="pass">
 <!--            <el-row style="height: 60px;border-bottom: gray 1px solid">-->
@@ -17,21 +17,21 @@
 <!--            </el-row>-->
             <img src="../assets/navi.png" width="100%">
             <el-row id="bg" >
-                <div style="padding: 20px;margin: 20px 15px;background-color: white;border-radius: 30px;position: relative">
+                <div style="padding: 20px;margin: 20px 15px 1000px;background-color: white;border-radius: 30px;position: relative">
                     <div style="position: relative">
                         <el-row style="font-weight: bold;font-size: small;margin-bottom: 10px">
                             校园通行卡
                         </el-row>
-                        <el-row>
-                            <TimeLabel></TimeLabel>
+                        <el-row style="z-index: 100">
+                            <TimeLabel ></TimeLabel>
                         </el-row>
-                        <div style="position: absolute; top: -10px;font-size: 65px;color: lightgray;font-family:'Kaiti SC'">航</div>
+                        <img style="position: absolute; bottom: -7px;left: 0px;z-index: 50" src="../assets/hang.png" width="20%">
                     </div>
 
                     <HR color="lightgray" size="1px"></HR>
                     <Points>
                     </Points>
-                    <div style="width: 40%;margin: 0 auto;text-align: left;font-size: smaller;padding-bottom: 30px">
+                    <div style="width: 40%;margin: 0 auto;text-align: left;font-size: x-small;padding-bottom: 30px">
                         <el-row>
                             <el-col span="8">姓名</el-col>
                             <el-col span="16">： 黄继辉</el-col>
@@ -58,6 +58,7 @@
 
                 </div>
             </el-row>
+            <img id="bottom-img" src="../assets/bottom.png" width="100%">
 <!--            <img id="base" src="../assets/base.png" width="100%">-->
 <!--            <div id="mask"></div>-->
 <!--            <img id="profile" src="../assets/profile.png" width="30%">-->
@@ -86,7 +87,7 @@
         // components: {Points, TimeLabel},
         data() {
             return {
-                pass: false,
+                pass: true,
                 password: "",
                 realPassword: "yes"
             }
@@ -106,9 +107,11 @@
         /*background-color: #45ff42;*/
         background-image: url("../assets/bgc.png");
         width: 100%;
-        height: 1000px;
+        height: 100%;
         /*margin: 0 auto;*/
+        /*background-size:100%;*/
         padding: 8px;
+        background-repeat:repeat;
         padding-bottom: 100px;
     }
     #sh1 {
@@ -150,5 +153,10 @@
         position: absolute;
         right: -10px;
         bottom: 13%;
+    }
+    #bottom-img {
+        position: fixed;
+        bottom: 0;
+        left: 0;
     }
 </style>
